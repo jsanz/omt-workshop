@@ -7,7 +7,7 @@
     "serve": "lite-server",
     "watch": "nodemon",
     "start": "concurrently \"npm run serve\" \"npm run watch\"",
-    "build": "cd doc && asciidoctor-revealjs slides.adoc --out-file index.html "
+    "build": "cd docs && asciidoctor-revealjs slides.adoc --out-file index.html "
   },
   "repository": {
     "type": "git",
