@@ -1,0 +1,9 @@
+.reveal .slides section .no-border img{
+  border-width: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.reveal .slides section .present a{
+  text-decoration: underline dotted #a08e78;
+}

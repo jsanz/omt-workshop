@@ -1,0 +1,134 @@
+= OpenMapTiles
+:revealjs_theme: serif
+:revealjs_hash: true
+:revealjs_history: true
+:customcss: styles/styles.css
+:icons: font
+:imagesdir: imgs
+:source-highlighter: highlightjs
+Jorge Sanz <jorge.sanz@elastic.co>
+https://twitter.com/xurxosanz[@xurxosanz]
+t3chfest 2020
+
+[.notes]
+--
+* This is a workshop about how to make basemaps using Open Data and Open Source
+* We will use OSM and other Open Data sources, along with a collection of components, styles, and procedures called OpenMapTiles
+--
+
+== !
+
+[.no-border]
+image::jsanz.png[Jorge]
+
+* Jorge Sanz
+* Data Engineer at https://elastic.co[Elastic]
+* Working at the https://github.com/kibana[Kibana Maps] team
+* https://jorgesanz.net[jorgesanz.net] · https://twitter.com/xurxosanz[@xurxosanz] · https://github.com/jsanz[gh:jsanz]
+
+[.notes]
+--
+* Present myself and a bit of my background and current job
+--
+
+
+=== 📑 Agenda
+
+* Webmapping Intro
+* OpenMapTiles
+* Loading data from OSM
+* Data processing
+* Serving vector tiles
+* Styling
+
+== 🌍 Webmapping intro
+
+=== Geographic Information System
+
+[cols="1,2"] 
+|===
+a| [.no-border] 
+image::gis.png[GIS,200]
+a|“A geographic information system (*GIS*) is a system designed to capture, store, manipulate, analyze, manage, and present all types of spatial or geographical data.”
+|===
+
+=== Cartographic projectnios
+
+[cols="1,1"] 
+|===
+a| [.no-border] 
+image::projections.png[Projections,125%]
+a|“*Projections* are what we call the mathematical equations that do the trick of turning the world into some flat shape that fits on a printout or a computer screen.”
+
+Projections are a compromise between *shape*, *angles*, and *distances*
+|===
+
+=== !
+
+[cols="1,1"] 
+|===
+a| [.no-border] 
+image::xkcd-1.png[xkcd 977]
+a| [.no-border] 
+image::xkcd-2.png[xkcd 977]
+
+https://xkcd.com/977/
+|===
+
+=== ! 
+
+image::mercator.png[background]
+
+=== Web maps
+
+[cols="1,1"] 
+|===
+a| [.no-border] 
+image::slippy.png[Slippy Map,100%]
+a|“A *tiled* web map, or slippy map is displayed in a browser by seamlessly joining dozens of individually image files (*vector* or *raster*) over the internet.”
+
+A web map can be *static* or *dynamic*.
+|===
+
+
+=== WebMercator projection
+
+image::tiles.jpg[WebMercator tiles, 150%]
+
+[%notitle,background-iframe="http://bboxfinder.com/"]
+=== BBox Finder
+
+
+=== A classic architecture
+
+image::arch.svg[Architecture,150%]
+
+=== This workshop
+
+image::arch-omt.svg[Architecture for this workshop,150%]
+== OpenMapTiles
+
+== Loading data from OSM
+
+== Data processing
+
+[source, bash]
+----
+for in in ls; do echo $i; done
+----
+
+== Serving vector tiles
+
+== Styling
+
+== Thanks!!
+[%hardbreaks]
+👨‍💻 Jorge Sanz 
+📧 mailto:jorge.sanz@elastic.co[jorge.sanz@elastic.co]
+🐤 https://twitter.com/xurxosanz[@xurxosanz]
+
+=== Resources
+
+* http://bit.ly/20191114-openmaptiles[Serving Vector Tiles and OpenMapTiles]
+
+
