@@ -1,9 +1,14 @@
-.reveal .slides section .no-border img{
+.reveal .slides section img{
   border-width: 0;
   background: none;
   box-shadow: none;
+  margin:0;
+  padding:0;
 }
 
-.reveal .slides section .present a{
-  text-decoration: underline dotted #a08e78;
+.reveal .slides section table,
+table.grid-all>thead>tr>.tableblock, table.grid-all>tbody>tr>.tableblock
+{
+  border: none;
+  padding: 0;
 }

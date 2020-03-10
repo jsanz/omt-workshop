@@ -1,14 +1,18 @@
 = OpenMapTiles
-:revealjs_theme: serif
+:revealjs_theme: black
 :revealjs_hash: true
 :revealjs_history: true
 :customcss: styles/styles.css
 :icons: font
 :imagesdir: imgs
 :source-highlighter: highlightjs
+:title-slide-transition: fade-in
+:title-slide-transition-speed: fast
 Jorge Sanz <jorge.sanz@elastic.co>
 https://twitter.com/xurxosanz[@xurxosanz]
-t3chfest 2020
+
+[.no-border]
+image::omt-logo.png[OpenMapTiles,50%]
 
 [.notes]
 --
@@ -21,10 +25,15 @@ t3chfest 2020
 [.no-border]
 image::jsanz.png[Jorge]
 
+
+
+
 * Jorge Sanz
 * Data Engineer at https://elastic.co[Elastic]
 * Working at the https://github.com/kibana[Kibana Maps] team
-* https://jorgesanz.net[jorgesanz.net] · https://twitter.com/xurxosanz[@xurxosanz] · https://github.com/jsanz[gh:jsanz]
+* https://jorgesanz.net[image:icons/website-white.png[title="website",30] jorgesanz.net] · https://twitter.com/xurxosanz[image:icons/twitter-white.png[title="twitter icon",35] xurxosanz] · https://github.com/jsanz[image:icons/github-white.png[title="github icon",35] jsanz]
+
+
 
 [.notes]
 --
@@ -43,34 +52,38 @@ image::jsanz.png[Jorge]
 
 == 🌍 Webmapping intro
 
-=== Geographic Information System
+=== GIS
 
 [cols="1,2"] 
 |===
-a| [.no-border] 
-image::gis.png[GIS,200]
-a|“A geographic information system (*GIS*) is a system designed to capture, store, manipulate, analyze, manage, and present all types of spatial or geographical data.”
+a|image::gis.png[GIS,80%]
+a|_“A geographic information system (*GIS*) is a system designed to capture, store, manipulate, analyze, manage, and present all types of spatial or geographical data.”_
 |===
 
-=== Cartographic projectnios
+[transition="fade-out", transition-speed=fast]
+=== Cartographic projections I
 
 [cols="1,1"] 
 |===
-a| [.no-border] 
-image::projections.png[Projections,125%]
+a|image::projections.png[Projections,125%]
 a|“*Projections* are what we call the mathematical equations that do the trick of turning the world into some flat shape that fits on a printout or a computer screen.”
+|===
 
-Projections are a compromise between *shape*, *angles*, and *distances*
+[transition="none", transition-speed=fast]
+=== Cartographic projections II
+
+[cols="1,1"] 
+|===
+a|image::projections.png[Projections,125%]
+a|Projections are a compromise between *shape*, *angles*, and *distances*
 |===
 
 === !
 
 [cols="1,1"] 
 |===
-a| [.no-border] 
-image::xkcd-1.png[xkcd 977]
-a| [.no-border] 
-image::xkcd-2.png[xkcd 977]
+a| image::xkcd-1.png[xkcd 977,85%]
+a| image::xkcd-2.png[xkcd 977,85%]
 
 https://xkcd.com/977/
 |===
@@ -91,7 +104,7 @@ A web map can be *static* or *dynamic*.
 |===
 
 
-=== WebMercator projection
+=== Webmercator
 
 image::tiles.jpg[WebMercator tiles, 150%]
 
@@ -106,26 +119,65 @@ image::arch.svg[Architecture,150%]
 === This workshop
 
 image::arch-omt.svg[Architecture for this workshop,150%]
+
 == OpenMapTiles
+
+[.no-border]
+image::omt-logo.png[OpenMapTiles,50%]
+
+=== Schema
+
+image::icons/gear.png[wip,100px]
+
+(_work in progress_)
+
+=== Tools
+
+image::icons/gear.png[wip,100px]
+
+(_work in progress_)
 
 == Loading data from OSM
 
+image::icons/gear.png[wip,100px]
+
+(_work in progress_)
+
 == Data processing
 
+image::icons/gear.png[wip,100px]
+
+(_work in progress_)
+
+[.notes]
+--
 [source, bash]
 ----
 for in in ls; do echo $i; done
 ----
+--
 
 == Serving vector tiles
 
+image::icons/gear.png[wip,100px]
+
+(_work in progress_)
+
 == Styling
+
+image::icons/gear.png[wip,100px]
+
+(_work in progress_)
 
 == Thanks!!
 [%hardbreaks]
 👨‍💻 Jorge Sanz 
 📧 mailto:jorge.sanz@elastic.co[jorge.sanz@elastic.co]
 🐤 https://twitter.com/xurxosanz[@xurxosanz]
+
+
+[.no-border]
+image::omt-logo.png[OpenMapTiles,50%]
 
 === Resources
 

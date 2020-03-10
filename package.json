@@ -6,8 +6,7 @@
   "scripts": {
     "serve": "lite-server",
     "watch": "nodemon",
-    "start": "concurrently \"npm run serve\" \"npm run watch\"",
-    "build": "cd docs && asciidoctor-revealjs slides.adoc --out-file index.html "
+    "start": "concurrently \"npm run serve\" \"npm run watch\""
   },
   "repository": {
     "type": "git",
@@ -15,9 +14,9 @@
   },
   "nodemonConfig": {
     "watch": [
-      "doc/slides.adoc"
+      "docs/slides.adoc"
     ],
-    "exec": "npm run-script build"
+    "exec": "cd docs && asciidoctor-revealjs slides.adoc --out-file index.html"
   },
   "keywords": [
     "openmaptiles",
