@@ -33,7 +33,11 @@
   "dependencies": {},
   "devDependencies": {
     "concurrently": "^5.1.0",
+    "http-proxy": ">=1.18.1",
     "lite-server": "^2.5.4",
-    "nodemon": "^2.0.2"
+    "minimist": "1.2.5",
+    "nodemon": "^2.0.2",
+    "object-path": ">=0.11.5",
+    "yargs-parser": ">=13.1.2"
   }
 }
